@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Pics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="style.css">
+    <link href="coolpics.css" rel="stylesheet">
+    <script defer src="coolpics.js"></script>
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
         </button>
-        <nav>
+        <nav class="hide">
             <a href="#">Home</a>
             <a href="#">People</a>
             <a href="#">Places</a>
@@ -24,36 +25,39 @@
         </nav>
     </header>
     <h2>Current Work</h2>
-    <main>
-        
-        <section>
-            <img src="norris-sm.jpg" alt="geyser">
-        </section>
-        <section>
-            <img src="norris-sm.jpg" alt="geyser">
-        </section>
-        <section>
-            <img src="norris-sm.jpg" alt="geyser">
-        </section>
-        <section>
-            <img src="norris-sm.jpg" alt="geyser">
-        </section>
-        <section>
-            <img src="norris-sm.jpg" alt="geyser">
-        </section>
-        <section>
-            <img src="norris-sm.jpg" alt="geyser">
-        </section>
-        <section>
-            <img src="norris-sm.jpg" alt="geyser">
-        </section>
-        <section>
-            <img src="norris-sm.jpg" alt="geyser">
-        </section>
-        <section>
-            <img src="norris-sm.jpg" alt="geyser">
-        </section>
+    <main class="gallery">
+            <section>
+                <img src="norris-sm.jpg" alt="geyser">
+            </section>
+            <section>
+                <img src="norris-sm.jpg" alt="geyser">
+            </section>
+            <section>
+                <img src="norris-sm.jpg" alt="geyser">
+            </section>
+            <section>
+                <img src="norris-sm.jpg" alt="geyser">
+            </section>
+            <section>
+                <img src="norris-sm.jpg" alt="geyser">
+            </section>
+            <section>
+                <img src="norris-sm.jpg" alt="geyser">
+            </section>
+            <section>
+                <img src="norris-sm.jpg" alt="geyser">
+            </section>
+            <section>
+                <img src="norris-sm.jpg" alt="geyser">
+            </section>
+            <section>
+                <img src="norris-sm.jpg" alt="geyser">
+            </section>
     </main>
+    <dialog>
+        <img>
+        <button class="close-viewer">X</button>
+    </dialog>
     <footer>&copy Avery Martin</footer>
 </body>
 </html>

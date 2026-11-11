@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Amatic SC";
+    src: url("AmaticSC-Regular.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+}
+.headline-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+.headline-grid img {
+    width: 140px;
+    height: 140px;
+}
+.headline-grid p {
+    font-family: "Amatic SC";
+    font-size: 75px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.search-bar-box {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.search-bar-box p {
+    margin-left: 8px;
+    color: gray;
+    font-size: 20px;
+}
+.search-bar-box img {
+    width: 50px;
+    height: auto;
+    margin-left: auto;
+    margin-right: 5px;
+    border-left: 2px solid black;
+    padding-left: 7px;
+}
+.main-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    flex: 1 1 400px;
+}
+.main-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-inline: auto;
+    margin-left: -3px;
+}
+.main-card h1 {
+    color: rgb(3, 193, 232);
+    font-family: "Amatic SC";
+}
+.main-card p {
+    display: none;
+}
+.main-card button {
+    width: 80px;
+    font-size: 18px;
+}
+.main-card-sub {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+    margin-left: -2px;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    justify-content: center;
+    gap: 5px;
+}
+.social img {
+    width: 50px;
+    height: auto;
+}
+footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+@media screen and (min-width: 550px) {
+    .social {
+        justify-content: flex-end;
+    }
+    .main-card {
+        flex-direction: row;
+        margin-right: auto;
+    }
+    .main-card p {
+        display: block;
+    }
+    .main-card img {
+        justify-content: flex-start;
+        width: 400px;
+    }
+    .main-card-sub {
+        margin-left: 15px;
+    }
+    .social {
+        justify-content: flex-end;
+    }
+    footer {
+        margin-top: -70px;
+        justify-content: flex-start;
+    }
+}
